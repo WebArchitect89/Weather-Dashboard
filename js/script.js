@@ -30,8 +30,29 @@
 
                        // Pseudocode(Reference to news search)
 
+                    //    First Phase
+
+// Create the structure to the search fora city box
+// Create the structure to the right of the details would go
+// Check the forecast
+
+
+
+
+
 // Create the queryURL var.
 // Create some variables(userInput/Key/City).
 //Clear out the search box
 //After pressing search a button should appear with the city''s name 
 // after pressing the city's button the information in the right should appear
+
+
+var key = "d5aed06623f6116731b6712909c097d9"
+var city = "Poole"
+
+//Grabs the current time and date
+var date = moment().format('dddd, MMMM Do YYYY');
+var dateTime = moment().format('DD-MM-YYYY HH:MM:SS');
+
+console.log(date)
+console.log(dateTime)
