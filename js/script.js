@@ -56,3 +56,27 @@ var dateTime = moment().format('DD-MM-YYYY HH:MM:SS');
 
 console.log(date)
 console.log(dateTime)
+
+var testButton = $(".search-button").text("Hey")
+
+var cityHist = [];
+//Will save the text value of the search and save it to an array and storage
+$(".search-button").on("click", function (event) {
+	event.preventDefault();
+	city = $(this).parent('.btnPar').siblings('.textVal').val();
+	if (city === "") {
+		return;
+	};
+	cityHist.push(city);
+console.log(city)
+	localStorage.setItem('city', JSON.stringify(cityHist));
+	fiveForecastEl.empty();
+	getHistory();
+	getWeatherToday();
+});
+
+var fiveForecastEl = $('.fiveForecast')
+console.log(city)
+console.log(cityHist)
+console.log(fiveForecastEl)
+
