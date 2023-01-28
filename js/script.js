@@ -28,3 +28,10 @@
 
 // When a user clicks on a city in the search history they are again presented with current and future conditions for that city.
 
+                       // Pseudocode(Reference to news search)
+
+// Create the queryURL var.
+// Create some variables(userInput/Key/City).
+//Clear out the search box
+//After pressing search a button should appear with the city''s name 
+// after pressing the city's button the information in the right should appear
